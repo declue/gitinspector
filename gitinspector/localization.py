@@ -68,7 +68,7 @@ def init():
 
 		__enabled__ = True
 		__installed__ = True
-		__translation__.install(True)
+		__translation__.install()
 
 def check_compatibility(version):
 	if isinstance(__translation__, gettext.GNUTranslations):
@@ -93,7 +93,7 @@ def get_date():
 
 def enable():
 	if isinstance(__translation__, gettext.GNUTranslations):
-		__translation__.install(True)
+		__translation__.install()
 
 		global __enabled__
 		__enabled__ = True
